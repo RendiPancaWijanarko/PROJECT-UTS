@@ -23,15 +23,10 @@
   </head>
   <body>
     <!-- Header -->
-    <header class="header">
-      <nav class="navbar navbar-expand-md navbar-light bg-light">
-        <a class="navbar-brand" href="#">RK Concert</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarCollapse"
-        >
+    <header class="header sticky-top">
+      <nav class="navbar navbar-expand-md navbar-light bg-light navbar-sm">
+        <a class="navbar-brand" href="web konser.html">RK Concert</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -51,28 +46,22 @@
             <li class="nav-item">
               <form class="form-inline">
                 <div class="input-group">
-                  <input
-                    class="form-control"
-                    type="text"
-                    placeholder="Cari konser"
-                  />
+                  <input class="form-control" type="text" placeholder="Cari konser" style="width: 250px;">
                   <div class="input-group-append">
-                    <button class="btn btn-outline-secondary" type="submit">
-                      Cari
-                    </button>
+                    <button class="btn btn-outline-secondary" type="submit" style="width: 70px; padding: 4px;">Cari</button>
                   </div>
-                </div>
+                </div>              
               </form>
             </li>
           </ul>
         </div>
       </nav>
-      <div class="header-text text-center">
-        <h1>Selamat Datang di RK Concert</h1>
-        <p>Beli tiket konser favoritmu sekarang!</p>
-      </div>
-    </header>
-
+    </header>    
+    <div class="header-text text-center" style="background-color: white; position: absolute; top: 20px; left: 0; right: 0;">
+      <h1 class="display-4 font-weight-bold">Selamat Datang di <span class="text-primary">RK Concert</span></h1>
+      <p class="lead">Nikmati konser dari artis favoritmu dengan tiket eksklusif kami.</p>
+    </div>    
+    
     <!-- Beranda -->
 
     <section id="banner-slider">
@@ -90,7 +79,7 @@
           <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
           <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
         </ol>
-        <div class="carousel-inner">
+        <div class="carousel-inner" style="padding-top: 111px;">
           <div class="carousel-item active">
             <img
               class="d-block w-100"
