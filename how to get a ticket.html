@@ -20,61 +20,102 @@
     <!-- My Style -->
     <link rel="stylesheet" href="PROJECT UTS\css\style.css" />
   </head>
-  <body style="background-color: #b0e0e6">
+  <body>
     <!-- Header -->
-    <header class="header">
-      <nav class="navbar navbar-expand-md navbar-light bg-light">
-        <a class="navbar-brand" href="#">RK Concert</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarCollapse"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+    <!-- Header -->
+    <header
+      class="header sticky-top"
+      style="
+        padding: 0px 0;
+        background-color: #2d2b2b;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+      "
+    >
+      <nav class="navbar navbar-expand-md navbar-light navbar-sm">
+        <a class="navbar-brand" href="web konser.html">
+          <img
+            src="img/Logo RK Concert Paling Bagus.png"
+            alt="RK Concert"
+            style="display: auto; width: 120px; border-radius: 50%"
+          />
+        </a>
         <div class="collapse navbar-collapse" id="navbarCollapse">
-          <ul class="navbar-nav ml-auto">
+          <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="web konser.html">Beranda</a>
+              <a class="nav-link" href="web konser.html" style="color: white"
+                >BERANDA</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="konser.html">Konser</a>
+              <a class="nav-link" href="konser.html" style="color: white"
+                >KONSER</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="tentang kami.html">Tentang Kami</a>
+              <a class="nav-link" href="tentang kami.html" style="color: white"
+                >TENTANG KAMI</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="contact.html">Kontak Kami</a>
-            </li>
-            <li class="nav-item">
-              <form class="form-inline">
-                <div class="input-group">
-                  <input
-                    class="form-control"
-                    type="text"
-                    placeholder="Cari konser"
-                  />
-                  <div class="input-group-append">
-                    <button class="btn btn-outline-secondary" type="submit">
-                      Cari
-                    </button>
-                  </div>
-                </div>
-              </form>
+              <a class="nav-link" href="contact.html" style="color: white"
+                >KONTAK KAMI</a
+              >
             </li>
           </ul>
+          <form class="form-inline" style="padding-right: 4rem">
+            <div class="input-group">
+              <input
+                class="form-control"
+                type="text"
+                placeholder="Cari konser"
+                style="width: 250px"
+              />
+              <div class="input-group-append">
+                <button
+                  class="btn btn-outline-secondary"
+                  type="submit"
+                  style="width: 70px; padding: 4px"
+                >
+                  Cari
+                </button>
+              </div>
+            </div>
+          </form>
+          <a href="#" class="action_btn">Mulai</a>
+          <div class="toggle_btn">
+            <i
+              class="fa-solid fa-bars"
+              style="color: whitesmoke; padding-right: 1rem"
+            ></i>
+          </div>
         </div>
       </nav>
-      <div class="header-text text-left">
-        <h4 style="padding-left: 1rem">
-          Refund Policy
-          <hr color="black" />
-        </h4>
+
+      <div class="dropdown_menu">
+        <li class="nav-item active">
+          <a class="nav-link" href="web konser.html" style="color: white"
+            >BERANDA</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="konser.html" style="color: white">KONSER</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="tentang kami.html" style="color: white"
+            >TENTANG KAMI</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html" style="color: white"
+            >KONTAK KAMI</a
+          >
+        </li>
+        <li><a href="#" class="action_btn">Mulai</a></li>
       </div>
     </header>
+
     <!-- Section refund start -->
-    <section class="refund-policy">
+    <section class="ticket">
       <a
         href="how to get a ticket.html"
         style="padding-left: 2rem; text-decoration: underline"
