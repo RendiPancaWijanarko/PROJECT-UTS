@@ -6,6 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pembelian Tiket Konser</title>
     <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="PROJECT UTS\bootstrap-4.5.3-dist\css\bootstrap.css"
+    />
+    <!-- Slick CSS -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+
     <link rel="stylesheet" href="DesignWebTiketKonser.css" />
     <!-- Feather Icon -->
     <script src="https://unpkg.com/feather-icons"></script>
@@ -18,47 +34,103 @@
       src="https://kit.fontawesome.com/9f3246d2c8.js"
       crossorigin="anonymous"
     ></script>
-    <!-- My Style -->
-    <link rel="stylesheet" href="PROJECT UTS\css\style.css" />
   </head>
   <body>
-
     <!-- Header -->
-    <header class="header sticky-top" style="padding: 0px 0;background-color: #2D2B2B; box-shadow: 0px 2px 5px rgba(0,0,0,0.5);">
-          <nav class="navbar navbar-expand-md navbar-light navbar-sm">
-              <a class="navbar-brand" href="web konser.html">
-                  <img src="img/Logo RK Concert Paling Bagus.png" alt="RK Concert" style="display: auto; width: 120px; border-radius: 50%;">
-              </a>
-              <div class="collapse navbar-collapse" id="navbarCollapse">
-                  <ul class="navbar-nav mr-auto">
-                      <li class="nav-item active">
-                          <a class="nav-link" href="web konser.html" style="color: white;">BERANDA</a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link" href="konser.html" style="color: white;">KONSER</a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link" href="tentang kami.html" style="color: white;">TENTANG KAMI</a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link" href="contact.html" style="color: white;">KONTAK KAMI</a>
-                      </li>
-                  </ul>
-                  <form class="form-inline">
-                      <div class="input-group">
-                          <input class="form-control" type="text" placeholder="Cari konser" style="width: 250px;">
-                          <div class="input-group-append">
-                              <button class="btn btn-outline-secondary" type="submit" style="width: 70px; padding: 4px;">Cari</button>
-                          </div>
-                      </div>              
-                  </form>
+    <header
+      class="header sticky-top"
+      style="
+        padding: 0px 0;
+        background-color: #2d2b2b;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+      "
+    >
+      <nav class="navbar navbar-expand-md navbar-light navbar-sm">
+        <a class="navbar-brand" href="web konser.html">
+          <img
+            src="img/Logo RK Concert Paling Bagus.png"
+            alt="RK Concert"
+            style="display: auto; width: 120px; border-radius: 50%"
+          />
+        </a>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="web konser.html" style="color: white"
+                >BERANDA</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="konser.html" style="color: white"
+                >KONSER</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="tentang kami.html" style="color: white"
+                >TENTANG KAMI</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html" style="color: white"
+                >KONTAK KAMI</a
+              >
+            </li>
+          </ul>
+          <form class="form-inline" style="padding-right: 4rem">
+            <div class="input-group">
+              <input
+                class="form-control"
+                type="text"
+                placeholder="Cari konser"
+                style="width: 250px"
+              />
+              <div class="input-group-append">
+                <button
+                  class="btn btn-outline-secondary"
+                  type="submit"
+                  style="width: 70px; padding: 4px"
+                >
+                  Cari
+                </button>
               </div>
-          </nav>
-      </header>
-    
-    <!-- Beranda -->
+            </div>
+          </form>
+          <a href="#" class="action_btn">Mulai</a>
+          <div class="toggle_btn">
+            <i
+              class="fa-solid fa-bars"
+              style="color: whitesmoke; padding-right: 1rem"
+            ></i>
+          </div>
+        </div>
+      </nav>
 
-    <section id="banner-slider">
+      <div class="dropdown_menu">
+        <li class="nav-item active">
+          <a class="nav-link" href="web konser.html" style="color: white"
+            >BERANDA</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="konser.html" style="color: white">KONSER</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="tentang kami.html" style="color: white"
+            >TENTANG KAMI</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html" style="color: white"
+            >KONTAK KAMI</a
+          >
+        </li>
+        <li><a href="#" class="action_btn">Mulai</a></li>
+      </div>
+    </header>
+
+    <!-- Beranda -->
+    <!-- 
+    <section class="banner-slider">
       <div
         id="carouselExampleIndicators"
         class="carousel slide"
@@ -73,25 +145,25 @@
           <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
           <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
         </ol>
-        <div class="carousel-inner" style="padding-top: 0px;">
+        <div class="carousel-inner" style="padding-top: 0px">
           <div class="carousel-item active">
             <img
               class="d-block w-100"
-              src="https://via.placeholder.com/1200x400?text=Banner+1"
+              src="C:\xampp\htdocs\PROJECT-UTS-main\PROJECT UTS\img\FOTO FORMAL BACKGROUND PUTIH.png"
               alt="Banner 1"
             />
           </div>
-          <div class="carousel-item">
+          <div class="carousel-item active">
             <img
               class="d-block w-100"
-              src="https://via.placeholder.com/1200x400?text=Banner+2"
+              src="C:\xampp\htdocs\PROJECT-UTS-main\PROJECT UTS\img\Logo RK Concert Paling Bagus.png"
               alt="Banner 2"
             />
           </div>
-          <div class="carousel-item">
+          <div class="carousel-item active">
             <img
               class="d-block w-100"
-              src="https://via.placeholder.com/1200x400?text=Banner+3"
+              src="C:\xampp\htdocs\PROJECT-UTS-main\PROJECT UTS\img\FOTO FORMAL BACKGROUND PUTIH.png"
               alt="Banner 3"
             />
           </div>
@@ -115,25 +187,75 @@
           <span class="sr-only">Next</span>
         </a>
       </div>
-    </section>
+    </section> -->
     <!-- end banner-slider -->
 
+    <!-- START BANNER SLIDE COBA2 -->
+
+    <div class="banner-slider">
+      <div class="slider">
+        <div>
+          <a href="#">
+            <img
+              src="C:\xampp\htdocs\PROJECT-UTS-main\PROJECT UTS\img\logo.jpg"
+              alt="image 1"
+            />
+          </a>
+        </div>
+        <div>
+          <a href="#">
+            <img
+              src="C:\xampp\htdocs\PROJECT-UTS-main\PROJECT UTS\img\Logo RK Concert Paling Bagus.png"
+              alt="image 2"
+            />
+          </a>
+        </div>
+        <div>
+          <a href="#">
+            <img
+              src="C:\xampp\htdocs\PROJECT-UTS-main\PROJECT UTS\img\FOTO FORMAL BACKGROUND PUTIH.png"
+              alt="image 3"
+            />
+          </a>
+        </div>
+        <div>
+          <a href="#">
+            <img
+              src="C:\xampp\htdocs\PROJECT-UTS-main\PROJECT UTS\img\logo.jpg"
+              alt="image 4"
+            />
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- END BANNER SLIDE COBA2 -->
+
     <!-- Search Concert -->
-    <section id="search-concert" style="color: #2D2B2B;">
+    <section id="search-concert" style="color: #2d2b2b">
       <div class="container">
         <h2 class="my-4 text-white">Pencarian Konser</h2>
         <div class="row">
           <div class="col-md-6 mb-3">
             <label for="artis" class="text-white">Artis</label>
-            <input type="text" class="form-control" id="artis" placeholder="Masukkan nama artis">
+            <input
+              type="text"
+              class="form-control"
+              id="artis"
+              placeholder="Masukkan nama artis"
+            />
           </div>
           <div class="col-md-6 mb-3">
             <label for="kota" class="text-white">Kota</label>
-            <<input type="text" class="form-control" id="kota" placeholder="Masukkan nama kota">
+            <<input
+              type="text"
+              class="form-control"
+              id="kota"
+              placeholder="Masukkan nama kota"
+            />
           </div>
           <div class="col-md-6 mb-3">
             <label for="tanggal" class="text-white">Tanggal</label>
-            <<input type="date" class="form-control" id="tanggal">
+            <<input type="date" class="form-control" id="tanggal" />
           </div>
           <div class="col-md-6 mb-3">
             <label for="genre" class="text-white">Genre Musik</label>
@@ -150,15 +272,17 @@
             </div>
           </div>
         </div>
-        <button class="btn btn-primary btn-lg text-uppercase">Cari Konser</button>
+        <button class="btn btn-primary btn-lg text-uppercase">
+          Cari Konser
+        </button>
       </div>
-    </section>     
+    </section>
 
     <!-- Konser Populer -->
     <div id="konser">
       <section id="popular-concerts">
         <div class="container my-4">
-          <h2 class="my-4">Konser Populer</h2>
+          <h2 class="my-4" style="color: white">Konser Populer</h2>
           <div class="row">
             <div class="col-md-4 mb-3">
               <div class="card">
@@ -276,9 +400,12 @@
 
     <!-- Start Testimonials Section -->
     <div id="Testi">
-      <section class="testimonials" style="padding-bottom: 50px; background-color: #F9FAFB; color: #1A1A1A;">
+      <section
+        class="testimonials"
+        style="padding-bottom: 50px; color: #1a1a1a"
+      >
         <div class="container">
-          <h2 style="text-align: center;">Apa Kata Mereka?</h2>
+          <h2 style="text-align: center; color: white">Apa Kata Mereka?</h2>
           <div class="row">
             <div class="col-md-4">
               <div class="testimonial">
@@ -287,14 +414,14 @@
                 </div>
                 <div class="testimonial-content">
                   <p>
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                    laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                    irure dolor in reprehenderit in voluptate velit esse cillum
-                    dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                    cupidatat non proident, sunt in culpa qui officia deserunt
-                    mollit anim id est laborum."
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum."
                   </p>
                   <div class="testimonial-meta">- Rendi Ganteng -</div>
                 </div>
@@ -307,14 +434,14 @@
                 </div>
                 <div class="testimonial-content">
                   <p>
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                    laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                    irure dolor in reprehenderit in voluptate velit esse cillum
-                    dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                    cupidatat non proident, sunt in culpa qui officia deserunt
-                    mollit anim id est laborum."
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum."
                   </p>
                   <div class="testimonial-meta">- Rendi Ganteng -</div>
                 </div>
@@ -327,14 +454,14 @@
                 </div>
                 <div class="testimonial-content">
                   <p>
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                    laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                    irure dolor in reprehenderit in voluptate velit esse cillum
-                    dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                    cupidatat non proident, sunt in culpa qui officia deserunt
-                    mollit anim id est laborum."
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum."
                   </p>
                   <div class="testimonial-meta">- Rendi Ganteng -</div>
                 </div>
@@ -343,13 +470,23 @@
           </div>
         </div>
       </section>
-    </div>    
+    </div>
     <!-- End Testimonials Section -->
-    <section id="contact" style="background-color: #fff; padding: 50px 0;">
+    <section id="contact" style="background-color: #fff; padding: 50px 0">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h2 style="margin-bottom: 20px; font-size: 36px; font-weight: bold; color: #2c3e50; text-shadow: 1px 1px #ddd;">Need Something?</h2>
+            <h2
+              style="
+                margin-bottom: 20px;
+                font-size: 36px;
+                font-weight: bold;
+                color: #2c3e50;
+                text-shadow: 1px 1px #ddd;
+              "
+            >
+              Need Something?
+            </h2>
             <hr class="star-primary" />
           </div>
         </div>
@@ -357,28 +494,82 @@
           <div class="col-lg-8 mx-auto">
             <form id="contactForm">
               <div class="form-group">
-                <label style="font-size: 1.2rem; font-weight: 500; color: #2c3e50;">Name</label>
-                <input type="text" class="form-control neon-border-gold" placeholder="Name" id="name" required />
+                <label
+                  style="font-size: 1.2rem; font-weight: 500; color: #2c3e50"
+                  >Name</label
+                >
+                <input
+                  type="text"
+                  class="form-control neon-border-gold"
+                  placeholder="Name"
+                  id="name"
+                  required
+                />
               </div>
               <div class="form-group">
-                <label style="font-size: 1.2rem; font-weight: 500; color: #2c3e50;">Email Address</label>
-                <input type="email" class="form-control neon-border-gold" placeholder="Email Address" id="email" required />
+                <label
+                  style="font-size: 1.2rem; font-weight: 500; color: #2c3e50"
+                  >Email Address</label
+                >
+                <input
+                  type="email"
+                  class="form-control neon-border-gold"
+                  placeholder="Email Address"
+                  id="email"
+                  required
+                />
               </div>
               <div class="form-group">
-                <label style="font-size: 1.2rem; font-weight: 500; color: #2c3e50;">Phone Number</label>
-                <input type="tel" class="form-control neon-border-gold" placeholder="Phone Number" id="phone" required />
+                <label
+                  style="font-size: 1.2rem; font-weight: 500; color: #2c3e50"
+                  >Phone Number</label
+                >
+                <input
+                  type="tel"
+                  class="form-control neon-border-gold"
+                  placeholder="Phone Number"
+                  id="phone"
+                  required
+                />
               </div>
               <div class="form-group">
-                <label style="font-size: 1.2rem; font-weight: 500; color: #2c3e50;">Message</label>
-                <textarea rows="5" class="form-control neon-border-gold" placeholder="Message" id="message" required></textarea>
+                <label
+                  style="font-size: 1.2rem; font-weight: 500; color: #2c3e50"
+                  >Message</label
+                >
+                <textarea
+                  rows="5"
+                  class="form-control neon-border-gold"
+                  placeholder="Message"
+                  id="message"
+                  required
+                ></textarea>
               </div>
               <div id="success"></div>
-              <button id="submit-btn" class="btn btn-primary btn-xl text-uppercase" type="submit" style="background-color: #000; color: #fff; border-radius: 30px; border: none; padding: 10px 40px; font-size: 18px; text-transform: uppercase; letter-spacing: 2px; cursor: pointer; transition: all 0.3s;">Submit</button>
+              <button
+                id="submit-btn"
+                class="btn btn-primary btn-xl text-uppercase"
+                type="submit"
+                style="
+                  background-color: #000;
+                  color: #fff;
+                  border-radius: 30px;
+                  border: none;
+                  padding: 10px 40px;
+                  font-size: 18px;
+                  text-transform: uppercase;
+                  letter-spacing: 2px;
+                  cursor: pointer;
+                  transition: all 0.3s;
+                "
+              >
+                Submit
+              </button>
             </form>
           </div>
         </div>
       </div>
-    </section>               
+    </section>
 
     <script>
       const form = document.getElementById("form");
@@ -481,6 +672,20 @@
 
     <!-- End of Page Wrapper -->
     <!-- Bootstrap core JavaScript -->
+    <script>
+      const togglebtn = document.querySelector(".toggle_btn");
+      const togglebtnicon = document.querySelector(".toggle_btn i");
+      const dropdownmenu = document.querySelector(".dropdown_menu");
+
+      togglebtn.onclick = function () {
+        dropdownmenu.classList.toggle("open");
+        const isopen = dropdownmenu.classList.contains("open");
+
+        togglebtnicon.classList = isopen
+          ? "fa-solid fa-xmark"
+          : "fa-solid fa-bars";
+      };
+    </script>
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <!-- Plugin JavaScript -->
@@ -488,5 +693,39 @@
     <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
     <!-- Custom scripts for this template -->
     <script src="js/creative.min.js"></script>
+    <!-- Our Script -->
+    <script>
+      $(document).ready(function () {
+        console.log("Im ready");
+      });
+    </script>
+
+    <!-- JQuery -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+    ></script>
+
+    <!-- Slick JS -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <!-- Our Script -->
+    <script>
+      $(document).ready(function () {
+        console.log("Im ready");
+      });
+    </script>
+    <script>
+      $(document).ready(function () {
+        $(".slider").slick({
+          autoplay: true,
+          autoplaySpeed: 10000,
+          dots: true,
+          fade: true,
+        });
+      });
+    </script>
   </body>
 </html>
