@@ -26,13 +26,14 @@ body {
   width: 250px;
 }
 
-/* banner slider */
+/* banner slider - start */
 .banner-slider {
-  padding: 15px;
   background-color: #fff;
   margin-left: auto;
   margin-right: auto;
+  overflow: hidden;
 }
+
 .slider .slick-slide {
   border: solid 1px #000;
 }
@@ -57,7 +58,7 @@ body {
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 .slick-dots {
-  bottom: 15px;
+  bottom: 50px;
 }
 .slick-dots li button:before {
   font-size: 12px;
@@ -76,6 +77,8 @@ body {
 .slick-dots {
   transition: opacity 0.5s ease-out;
 }
+/* banner slider - end */
+
 .control-group textarea {
   height: 200px;
 }
@@ -97,7 +100,10 @@ body {
   font-weight: bold;
   margin-bottom: 0;
 }
+
+/* PENCARIAN KONSER - START */
 #search-concert {
+  margin-top: -32px;
   padding: 50px 0;
   background-color: #2d2b2b;
 }
@@ -108,7 +114,7 @@ body {
 }
 #search-concert input,
 #search-concert select {
-  border-radius: 0;
+  border-radius: 10px;
   border: none;
   background-color: #444;
   color: white;
@@ -147,6 +153,40 @@ body {
   background-color: #e3b789;
   color: white;
 }
+/* PENCARIAN KONSER - END */
+
+/* KONSER POPULER - START */
+#popular-concerts {
+  background-color: white;
+  padding: 60px 0;
+}
+
+.card {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5%;
+}
+
+.btn-KP {
+  background-color: #c4a360;
+  color: black;
+  border: none;
+  border-radius: 7px;
+  padding: 10px 20px;
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 1.5;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+btn-KP:hover {
+  background-color: #e3b789;
+  color: white;
+}
+
+/* KONSER POPULER - END */
 
 .navbar-bottom {
   padding-top: 2rem;
@@ -229,6 +269,12 @@ body {
 .navbar-nav .nav-link:not(.active) {
   font-weight: normal;
 }
+
+/* TESTI - START */
+#Testi {
+  padding-top: 30px;
+}
+
 .testimonial {
   padding: 30px;
   background-color: #ffffff;
@@ -271,6 +317,7 @@ body {
   font-weight: 600;
   color: #8f8f8f;
 }
+/* TESTI - END */
 
 .Register ul {
   .Register {
