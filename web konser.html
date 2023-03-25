@@ -21,7 +21,12 @@
       type="text/css"
       href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
     />
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,700;1,600&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="DesignWebTiketKonser.css" />
     <!-- Feather Icon -->
     <script src="https://unpkg.com/feather-icons"></script>
@@ -96,13 +101,13 @@
             </div>
           </form>
           <button class="btnLogin-popup">🔒 | Login</button>
-          <!-- <a href="#" class="action_btn">Mulai</a>
+          <a href="#" class="action_btn">Mulai</a>
           <div class="toggle_btn">
             <i
               class="fa-solid fa-bars"
               style="color: whitesmoke; padding-right: 1rem"
             ></i>
-          </div> -->
+          </div>
         </div>
       </nav>
 
@@ -128,73 +133,74 @@
         <li><a href="#" class="action_btn">Mulai</a></li>
       </div>
     </header>
-
-    <!-- Login -->
-    <!--    <div class="wrapper">
-        <span class="icon-close"><i class="fa-solid fa-xmark"></i></span>
-        <div class="form-box login">
-          <h2>Login</h2>
-          <form action="#">
-            <div class="input-box">
-              <span class="icon"><i class="fa-solid fa-envelope"></i></span>
-              <input type="email" required />
-              <label>Email</label>
-            </div>
-            <div class="input-box">
-              <span class="icon"><i class="fa-solid fa-lock"></i></span>
-              <input type="password" required />
-              <label>Password</label>
-            </div>
-            <div class="remember-forgot">
-              <label><input type="checkbox" />Remember Me</label>
-              <a href="#">Forgot Password?</a>
-            </div>
-            <button type="submit" class="btnLGN">Login</button>
-            <div class="login-register">
-              <p>
-                Don't have an account?
-                <a href="#" class="register-link">Register</a>
-              </p>
-            </div>
-          </form>
-        </div>
-
-        <!-- Register -->
-    <!--         <div class="form-box register">
-          <h2>Registration</h2>
-          <form action="#">
-            <div class="input-box">
-              <span class="icon"><i class="fa-solid fa-user"></i></span>
-              <input type="text" required />
-              <label>Username</label>
-            </div>
-            <div class="input-box">
-              <span class="icon"><i class="fa-solid fa-envelope"></i></span>
-              <input type="email" required />
-              <label>Email</label>
-            </div>
-            <div class="input-box">
-              <span class="icon"><i class="fa-solid fa-lock"></i></span>
-              <input type="password" required />
-              <label>Password</label>
-            </div>
-            <div class="remember-forgot">
-              <label
-                ><input type="checkbox" />I agree to the terms &
-                conditions</label
-              >
-            </div>
-            <button type="submit" class="btnLGN">Register</button>
-            <div class="login-register">
-              <p>
-                Already have an account?
-                <a href="#" class="login-link">Login</a>
-              </p>
-            </div>
-          </form>
-        </div>
+    <!-- login dan register kiki start  -->
+    <div class="wrapper">
+      <span class="icon-close">
+        <i class="fa-solid fa-xmark"></i>
+      </span>
+      <div class="form-box login">
+        <h2>Login</h2>
+        <form action="#">
+          <div class="input-box">
+            <span class="icon">
+              <i class="fa-solid fa-envelope"></i>
+            </span>
+            <input type="email" required />
+            <label for="">Email</label>
+          </div>
+          <div class="input-box">
+            <span class="icon">
+              <i class="fa-solid fa-lock"></i>
+            </span>
+            <input type="password" required />
+            <label> Password</label>
+          </div>
+          <div class="remember-forgot">
+            <label> <input type="checkbox" /> Remember Me</label>
+            <a href="#">Forgot Password?</a>
+          </div>
+          <button type="submit" class="btn">Login</button>
+          <div class="login-register">
+            <p>
+              Don't Have an Account?
+              <a href="#" class="register-link"> Register</a>
+            </p>
+          </div>
+        </form>
       </div>
-    </div> -->
+      <div class="form-box register">
+        <h2>Registration</h2>
+        <form action="#">
+          <div class="input-box">
+            <span class="icon">
+              <i class="fa-solid fa-user"></i>
+            </span>
+            <input type="text" required />
+            <label for="">Username</label>
+          </div>
+          <div class="input-box">
+            <span class="icon">
+              <i class="fa-solid fa-lock"></i>
+            </span>
+            <input type="password" required />
+            <label> Password</label>
+          </div>
+          <div class="remember-forgot">
+            <label>
+              <input type="checkbox" /> I Agree to the terms & conditions</label
+            >
+          </div>
+          <button type="submit" class="btn">Register</button>
+          <div class="login-register">
+            <p>
+              Already Have an Account?
+              <a href="#" class="login-link">Login</a>
+            </p>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- login dan register kiki End  -->
 
     <!-- START BANNER SLIDER -->
 
@@ -613,21 +619,21 @@
         <h6 style="cursor: pointer">
           <a href="refund policy.html" style="color: black"> Refund Policy</a>
         </h6>
-        <hr size="1px" width="250%" align="left" color="black" />
+        <hr size="1px" width="250px" align="left" color="black" />
         <h6 style="cursor: pointer">
           <a href="how to get a ticket.html" style="color: black"
             >How To Get a Ticker Concert</a
           >
         </h6>
-        <hr size="1px" width="250%" align="left" color="black" />
+        <hr size="1px" width="250px" align="left" color="black" />
         <h6 style="cursor: pointer">
           <a href="faq.html" style="color: black">FAQ</a>
         </h6>
-        <hr size="1px" width="250%" align="left" color="black" />
+        <hr size="1px" width="250px" align="left" color="black" />
         <h6 style="cursor: pointer">
           <a href="payment.html" style="color: black">Payment Confirmation</a>
         </h6>
-        <hr size="1px" width="250%" align="left" color="black" />
+        <hr size="1px" width="250px" align="left" color="black" />
       </div>
       <div class="content-navbar-bottom">
         <h5>RK Concert</h5>
@@ -711,7 +717,7 @@
     ></script>
 
     <!-- Script Form Login dan Register -->
-    <script src="scriptLOGINREGISTER.js"></script>
+    <script src="C:\xampp\htdocs\PROJECT-UTS-main\scriptLOGINREGISTER.js"></script>
     <!-- Our Script -->
     <script>
       $(document).ready(function () {
@@ -722,7 +728,7 @@
       $(document).ready(function () {
         $(".slider").slick({
           autoplay: true,
-          autoplaySpeed: 10000,
+          autoplaySpeed: 2500,
           dots: true,
           fade: true,
         });
