@@ -574,16 +574,20 @@ btn-KP:hover {
 }
 
 .dropdown_menu li {
-  padding-top: 6rem;
+  padding-top: 2rem;
   display: flex;
   color: black;
   background-color: #c4a360;
   align-items: center;
   justify-content: center;
 }
+.dropdown_menu li:hover {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
 
 .dropdown_menu.open {
-  height: 240px;
+  height: 400px;
 }
 .dropdown_menu .action_btn {
   width: 100%;
@@ -591,16 +595,18 @@ btn-KP:hover {
   justify-content: center;
 }
 .dropdown_menu .nav-item {
-  padding-top: 2rem;
+  padding-top: 1rem;
 }
+
+.dropdown_menu 
 /* navbar start */
 
 .navbar .toggle_btn {
   color: white;
-  font-size: 1.5rem;
+  font-size: 3rem;
   padding-right: 2rem;
   cursor: pointer;
-  display: none;
+  display: fix;
 }
 .action_btn {
   background-color: #c4a360;
@@ -834,5 +840,11 @@ btn-KP:hover {
   }
   .dropdown_menu {
     display: block;
+  }
+}
+/* Mobile Phone */
+@media (max-width: 450px) {
+  html {
+    font-size: 55%;
   }
 }
